@@ -382,3 +382,14 @@ button:hover {
   border-right: solid 1px transparent;
   border-left: solid 1px transparent;
 }
+
+.search-form__checkbox-list.search-form__label:active {
+  outline: none;
+  border-right: solid 1px white;
+  border-left: solid 1px white;
+}
+
+.search-form__checkbox-list .search-form__label {
+  border-right: solid 1px transparent;
+  border-left: solid 1px transparent;
+}
