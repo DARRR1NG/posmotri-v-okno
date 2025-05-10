@@ -43,7 +43,6 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
 }
 
 .result__video {
@@ -66,6 +65,7 @@ ol {
   display: flex;
   flex-direction: column;
   align-self: end;
+  gap: 16px;
 }
 
 .content__details {
@@ -87,13 +87,14 @@ ol {
 .content__list-container {
   overflow: auto;
   height: 298px;
+  width: 399px;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 7px 1px 1px 1px;
+  padding: 0px 3px 3px 3px;
 }
 
 .content__video-card {
@@ -123,10 +124,14 @@ ol {
   letter-spacing: 0%;
 }
 
+.search-form__label {
+  display: block;
+}
+
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 11px;
 }
 
 .title {
@@ -186,6 +191,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  padding-bottom: 5px;
 }
 
 fieldset {
@@ -241,10 +247,6 @@ input.search-form__checkbox:checked + span.search-form__pseudo-checkbox::after {
 
 .search-form__label:has(:focus-visible) {
   outline: solid 1px white;
-}
-
-.search-form__label:hover {
-  text-decoration: underline;
 }
 
 .button {
@@ -306,11 +308,6 @@ button:hover {
   outline-offset: 1px;
 }
 
-.search-form__textfield::placeholder {
-  color: white;
-  opacity: 0.7;
-}
-
 .search-form__submit-button:hover:active {
   text-decoration: none;
 }
@@ -320,7 +317,7 @@ button:hover {
   outline-offset: 1px;
 }
 
-.content__list-item:focus-visible {
+.content__card-link:focus-visible {
   outline: solid 1px white;
 }
 
@@ -347,4 +344,21 @@ button:hover {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+}
+
+.search-form__textfield::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.search-form__textfield::placeholder:hover {
+  text-decoration: none;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
