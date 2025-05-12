@@ -82,7 +82,6 @@ ol {
   display: flex;
   justify-content: start;
   justify-content: space-between;
-  align-items: end;
 }
 
 .content__list-container {
@@ -263,12 +262,14 @@ input.search-form__checkbox:checked + span.search-form__pseudo-checkbox::after {
 .search-form__submit-button {
   min-width: 194px;
   min-height: 34px;
+  align-self: end;
 }
 
 .more-button {
   width: 100%;
   padding: 6px 142px;
-  margin-top: 30px;
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
 
 .content__card-link:hover {
