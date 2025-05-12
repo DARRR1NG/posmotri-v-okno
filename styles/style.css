@@ -226,24 +226,25 @@ fieldset {
 
 .search-form__pseudo-checkbox {
   width: 19px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   height: 19px;
   border: solid 1px white;
   margin-right: 5px;
-  position: relative;
 }
 
 span.search-form__pseudo-checkbox::after {
   content: '';
+  display: none;
   background-color: white;
   width: 15px;
   height: 15px;
 }
 
 input.search-form__checkbox:checked + span.search-form__pseudo-checkbox::after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 1px;
+  display: block;
+  margin-top: 1px;
 }
 
 .button {
