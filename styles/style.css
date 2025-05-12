@@ -294,12 +294,12 @@ button:hover {
   text-decoration: underline;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline: solid 1px white;
   outline-offset: 1px;
 }
 
-.search-form__submit-button:hover:active {
+.button:hover:active {
   text-decoration: none;
 }
 
