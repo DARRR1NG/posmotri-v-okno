@@ -1,1 +1,1 @@
-https://github.com/DARRR1NG/posmotri-v-okno-fd
+https://darrr1ng.github.io/posmotri-v-okno-fd/
